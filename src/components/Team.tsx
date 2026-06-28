@@ -11,6 +11,8 @@ const team = [
     bg: "var(--forest)",
     text: "var(--bone)",
     accent: "var(--moss)",
+    portfolio: "https://luis.kentolab.com/",
+    linkedin: "https://www.linkedin.com/in/luis-garcia-67b837393",
   },
   {
     name: "Agustina Czemerys",
@@ -19,6 +21,8 @@ const team = [
     bg: "var(--forest)",
     text: "var(--bone)",
     accent: "var(--moss)",
+    portfolio: "https://agustina-ghl-expert-9dqia91.gamma.site/",
+    linkedin: "https://www.linkedin.com/in/agustina-czemerys-aa804718a/",
   },
   {
     name: "Florencia Sanchez",
@@ -27,6 +31,8 @@ const team = [
     bg: "var(--terracotta)",
     text: "var(--bone)",
     accent: "var(--clay)",
+    portfolio: "https://www.instagram.com/flowerpower.emprende",
+    linkedin: "https://www.linkedin.com/in/florsanchezodo/",
   },
   {
     name: "Luisina",
@@ -37,9 +43,18 @@ const team = [
     accent: "var(--terracotta)",
   },
   {
-    name: "Gala & Meli",
+    name: "Gala",
+    role: "Content Creator & Community Management",
+    initials: "GA",
+    bg: "var(--moss)",
+    text: "var(--bone)",
+    accent: "var(--clay)",
+    linkedin: "https://www.instagram.com/flowerpower.emprende",
+  },
+  {
+    name: "Meli",
     role: "Content Creation & Community Management",
-    initials: "GM",
+    initials: "ME",
     bg: "var(--moss)",
     text: "var(--bone)",
     accent: "var(--clay)",
@@ -73,12 +88,12 @@ export function Team() {
               maxWidth: "24ch",
             }}
           >
-            A team of 5 specialists — each one deep in their niche
+            A team of 6 specialists — each one deep in their niche
           </h2>
         </motion.div>
 
         {/* Team grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
           {team.map((member, i) => (
             <motion.div
               key={member.name}
@@ -86,7 +101,7 @@ export function Team() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.6, delay: i * 0.1, ease }}
-              className={`flex flex-col items-center text-center gap-4 p-6 rounded-2xl${i === team.length - 1 ? " col-span-2 md:col-span-1 max-w-[220px] mx-auto w-full" : ""}`}
+              className="flex flex-col items-center text-center gap-3 p-5 rounded-2xl"
               style={{
                 background: "rgba(47,64,53,0.04)",
                 border: "1px solid rgba(47,64,53,0.08)",
@@ -94,7 +109,7 @@ export function Team() {
             >
               {/* Avatar */}
               <div
-                className="w-16 h-16 rounded-full flex items-center justify-center font-semibold text-lg flex-shrink-0"
+                className="w-14 h-14 rounded-full flex items-center justify-center font-semibold text-base flex-shrink-0"
                 style={{
                   background: member.bg,
                   color: member.text,
@@ -106,7 +121,7 @@ export function Team() {
               </div>
 
               {/* Info */}
-              <div className="flex flex-col gap-1">
+              <div className="flex flex-col gap-1 flex-1">
                 <p
                   className="font-semibold text-sm leading-tight"
                   style={{ color: "var(--forest)" }}
@@ -120,6 +135,40 @@ export function Team() {
                   {member.role}
                 </p>
               </div>
+
+              {/* Links */}
+              {(member.portfolio || member.linkedin) && (
+                <div className="flex flex-col gap-1.5 w-full mt-1">
+                  {member.portfolio && (
+                    <a
+                      href={member.portfolio}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs font-medium px-3 py-1.5 rounded-md transition-all duration-200 text-center"
+                      style={{
+                        background: "rgba(47,64,53,0.08)",
+                        color: "var(--forest)",
+                      }}
+                    >
+                      see portfolio
+                    </a>
+                  )}
+                  {member.linkedin && (
+                    <a
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs font-medium px-3 py-1.5 rounded-md transition-all duration-200 text-center"
+                      style={{
+                        background: "rgba(47,64,53,0.08)",
+                        color: "var(--forest)",
+                      }}
+                    >
+                      LinkedIn profile
+                    </a>
+                  )}
+                </div>
+              )}
 
               {/* Role accent dot */}
               <span
