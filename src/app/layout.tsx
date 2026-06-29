@@ -11,7 +11,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "kento lab — where technology meets nature",
+  title: "kento lab: where technology meets nature",
   description:
     "Boutique Go High Level support and custom builds for coaches, therapists, and SaaS platforms that serve them. Real technical help, in human language.",
   openGraph: {

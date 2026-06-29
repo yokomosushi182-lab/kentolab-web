@@ -49,7 +49,7 @@ export function ClosingCTA() {
             }}
           >
             No pressure, no jargon. Just a real conversation about where you
-            are and what would actually help — whether that&apos;s a quick fix
+            are and what would actually help, whether that&apos;s a quick fix
             or a long-term partnership.
           </p>
 

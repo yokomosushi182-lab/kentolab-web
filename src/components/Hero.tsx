@@ -90,7 +90,7 @@ export function Hero() {
             style={{ color: "rgba(244,239,230,0.72)", maxWidth: "42ch" }}
           >
             Whether you run a SaaS platform for coaches or you&apos;re an
-            entrepreneur who needs real GHL support — we handle the technical
+            entrepreneur who needs real GHL support, we handle the technical
             side so you can focus on your clients, not your CRM.
           </motion.p>
 

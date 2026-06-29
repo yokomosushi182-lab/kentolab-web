@@ -89,7 +89,7 @@ export function Team() {
               maxWidth: "24ch",
             }}
           >
-            A team of 6 specialists — each one deep in their niche
+            A team of 6 specialists, each one deep in their niche
           </h2>
         </motion.div>
 
@@ -190,7 +190,7 @@ export function Team() {
           className="mt-12 text-sm leading-relaxed"
           style={{ color: "var(--stone)", maxWidth: "52ch" }}
         >
-          Every person on this team works within a specific area — no generalists,
+          Every person on this team works within a specific area. No generalists,
           no guesswork. When you work with kento lab, you get the right person
           for the right problem, every time.
         </motion.p>

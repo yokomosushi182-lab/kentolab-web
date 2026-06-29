@@ -5,7 +5,7 @@ const problems = [
   {
     number: "01",
     title: "It felt like a foreign language",
-    body: "Funnels, workflows, pipelines, triggers — you nodded along but left more confused than when you started. Nobody stopped to explain what any of it actually meant for your business.",
+    body: "Funnels, workflows, pipelines, triggers: you nodded along but left more confused than when you started. Nobody stopped to explain what any of it actually meant for your business.",
   },
   {
     number: "02",
@@ -14,7 +14,7 @@ const problems = [
   },
   {
     number: "03",
-    title: "Something got broken — and trust went with it",
+    title: "Something got broken and trust went with it",
     body: "An automation fired wrong, leads fell through, a campaign sent to the wrong people. Now you're nervous to touch anything. The CRM feels fragile, and so does your confidence in it.",
   },
 ];
@@ -88,7 +88,7 @@ export function Problem() {
               <span style={{ color: "var(--clay)" }}>
                 broken relationship with technology
               </span>
-              . Our job isn&apos;t just to fix your CRM — it&apos;s to rebuild
+              . Our job isn&apos;t just to fix your CRM. It&apos;s to rebuild
               your confidence in it.
             </p>
           </div>

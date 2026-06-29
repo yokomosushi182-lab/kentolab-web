@@ -61,7 +61,7 @@ export function BrandTerritory() {
           >
             kento lab exists at the intersection of technology and what&apos;s
             human. We believe digital tools should feel as natural as a
-            conversation — not like an obstacle.
+            conversation, not like an obstacle.
           </p>
           <p
             className="leading-relaxed"
@@ -73,8 +73,8 @@ export function BrandTerritory() {
             }}
           >
             That&apos;s why we support coaches, therapists, and the SaaS
-            platforms built around them — with real technical help, in human
-            language — so technology stops being a barrier and goes back to
+            platforms built around them, with real technical help in human
+            language, so technology stops being a barrier and goes back to
             serving what matters: the people you help.
           </p>
         </FadeIn>
@@ -89,7 +89,7 @@ export function BrandTerritory() {
           },
           {
             word: "steady",
-            desc: "We stick around after the build. Not a one-time fix — a partner you can actually reach.",
+            desc: "We stick around after the build. Not a one-time fix. A partner you can actually reach.",
           },
           {
             word: "rooted",

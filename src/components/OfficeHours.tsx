@@ -53,7 +53,7 @@ export function OfficeHours() {
                 color: "var(--forest)",
               }}
             >
-              Office Hours — live, every week
+              Office Hours, live every week
             </h2>
           </motion.div>
 
@@ -68,7 +68,7 @@ export function OfficeHours() {
               style={{ color: "var(--forest)", fontSize: "1.0625rem", maxWidth: "44ch", opacity: 0.82 }}
             >
               GHL has hundreds of features. Your coaches don&apos;t need all of
-              them — they need the right ones, set up for their specific offer,
+              them. They need the right ones, set up for their specific offer,
               without spending hours figuring it out alone.
             </p>
             <p
@@ -77,7 +77,7 @@ export function OfficeHours() {
             >
               Every week, we get on a live call with your clients. We answer
               questions, fix things in real time, and make sure nobody gets
-              left behind. It&apos;s what keeps them on your platform — and
+              left behind. It&apos;s what keeps them on your platform, and
               it&apos;s what makes your SaaS worth renewing.
             </p>
           </motion.div>
@@ -136,7 +136,7 @@ export function OfficeHours() {
           {[
             {
               title: "We know their offers",
-              body: "We understand how coaches package and sell their programs — funnels, automations, booking flows — so we speak their language, not just GHL's.",
+              body: "We understand how coaches package and sell their programs — funnels, automations, booking flows, so we speak their language, not just GHL's.",
             },
             {
               title: "We handle the complexity",

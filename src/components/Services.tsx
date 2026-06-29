@@ -175,12 +175,12 @@ export function Services() {
         colorBg="var(--terracotta)"
         label="for coaches & therapists"
         title="Bloom Build"
-        tagline="Your custom funnel or fix — built once, ready to grow."
+        tagline="Your custom funnel or fix, built once and ready to grow."
         tag="pay-per-project · no commitment"
         accentColor="var(--bone)"
         dotColor="var(--terracotta)"
         items={bloomIncludes}
-        body="Clients come back any time they need something new. No retainer, no ongoing commitment — just the build you need, done right."
+        body="Clients come back any time they need something new. No retainer, no ongoing commitment. Just the build you need, done right."
         photo="https://images.unsplash.com/photo-1585974738771-84483dd9f89f?auto=format&fit=crop&w=800&q=80"
         photoAlt="A flourishing, grounded workspace"
         ctas={
@@ -213,7 +213,7 @@ export function Services() {
         accentColor="var(--clay)"
         dotColor="var(--forest)"
         items={deepIncludes}
-        body="Built for SaaS platforms that serve coaches and need a real technical partner — not a one-time contractor. Weekly Office Hours keep your clients from churning."
+        body="Built for SaaS platforms that serve coaches and need a real technical partner, not a one-time contractor. Weekly Office Hours keep your clients from churning."
         ctas={
           <>
             <a href={CALENDLY} target="_blank" rel="noopener noreferrer"
