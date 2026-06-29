@@ -5,7 +5,7 @@ import Image from "next/image";
 const WHATSAPP = `https://wa.me/5492944157182?text=${encodeURIComponent(
   "Hi! I found you through your website and I'd love to learn more about kento lab."
 )}`;
-const CALENDLY = "https://calendly.com/luis-garcia-kento-lab";
+const CALENDLY = "https://calendly.com/luis-garcia-kento-lab/30min";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
