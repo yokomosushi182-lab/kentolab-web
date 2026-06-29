@@ -58,6 +58,7 @@ const team = [
     bg: "var(--moss)",
     text: "var(--bone)",
     accent: "var(--clay)",
+    portfolio: "https://melicontent.netlify.app/",
   },
 ];
 
