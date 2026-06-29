@@ -43,7 +43,7 @@ const team = [
     accent: "var(--terracotta)",
   },
   {
-    name: "Gala",
+    name: "Gala Rodriguez",
     role: "Content Creator & Community Management",
     initials: "GA",
     bg: "var(--moss)",
@@ -52,7 +52,7 @@ const team = [
     linkedin: "https://www.instagram.com/flowerpower.emprende",
   },
   {
-    name: "Meli",
+    name: "Meli Cores",
     role: "Content Creation & Community Management",
     initials: "ME",
     bg: "var(--moss)",
