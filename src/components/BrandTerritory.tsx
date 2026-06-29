@@ -32,7 +32,7 @@ export function BrandTerritory() {
             style={{ aspectRatio: "4/3", boxShadow: "0 20px 60px rgba(47,64,53,0.2)" }}
           >
             <Image
-              src="/a bridge beetween .png"
+              src="/bridge.png"
               alt="A bridge between technology and the roots of life"
               fill
               className="object-cover"
