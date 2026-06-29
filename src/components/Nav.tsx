@@ -134,7 +134,7 @@ export function Nav() {
               chat on WhatsApp
             </a>
             <a
-              href="https://calendly.com/kentolab"
+              href="https://calendly.com/luis-garcia-kento-lab"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-md font-semibold text-base border min-h-[52px]"
