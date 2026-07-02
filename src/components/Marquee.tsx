@@ -2,9 +2,9 @@
 import { motion } from "framer-motion";
 
 const words = [
-  "grounded", "·", "steady", "·", "rooted", "·",
-  "real support", "·", "no jargon", "·", "by your side", "·",
-  "plain english", "·", "human first", "·",
+  "GHL experts", "·", "paid media", "·", "content creation", "·",
+  "community management", "·", "marketing strategy", "·", "real support", "·",
+  "no jargon", "·", "by your side", "·", "full-service", "·",
 ];
 const doubled = [...words, ...words];
 

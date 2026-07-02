@@ -4,18 +4,18 @@ import { FadeIn } from "./FadeIn";
 const problems = [
   {
     number: "01",
-    title: "It felt like a foreign language",
-    body: "Funnels, workflows, pipelines, triggers: you nodded along but left more confused than when you started. Nobody stopped to explain what any of it actually meant for your business.",
+    title: "Too many tools, not enough results",
+    body: "You have the CRM, the ad account, the content calendar. But nothing talks to each other and nothing is working as well as it should. The tech is there. The strategy is missing.",
   },
   {
     number: "02",
     title: "They built it and disappeared",
-    body: "The setup looked great on a screen share. Then they were gone. No follow-up, no one to call when something broke, no continuity. You were left alone with a system you didn't fully understand.",
+    body: "The setup looked great on a screen share. Then they were gone. No follow-up, no one to call when something broke. You were left managing a system you didn't fully understand, alone.",
   },
   {
     number: "03",
-    title: "Something got broken and trust went with it",
-    body: "An automation fired wrong, leads fell through, a campaign sent to the wrong people. Now you're nervous to touch anything. The CRM feels fragile, and so does your confidence in it.",
+    title: "Marketing feels like a second job",
+    body: "Ads, content, emails, automations, community. Each one is a discipline on its own. You're spending more time on the machine than on the work that actually moves your business forward.",
   },
 ];
 
@@ -84,12 +84,11 @@ export function Problem() {
                 maxWidth: "60ch",
               }}
             >
-              The problem is never just technical. It&apos;s a{" "}
+              The problem is never just one thing. It&apos;s{" "}
               <span style={{ color: "var(--clay)" }}>
-                broken relationship with technology
-              </span>
-              . Our job isn&apos;t just to fix your CRM. It&apos;s to rebuild
-              your confidence in it.
+                not having the right team behind you.
+              </span>{" "}
+              We cover GHL, paid media, content, and community so you stop patching things together and start growing.
             </p>
           </div>
         </FadeIn>

@@ -6,9 +6,9 @@ import Image from "next/image";
 const ease = [0.16, 1, 0.3, 1] as const;
 
 const headlineWords = [
-  "your coaches",
-  "shouldn't figure out",
-  "GHL alone",
+  "your coaches need",
+  "more than a CRM.",
+  "they need a team.",
 ];
 
 export function Hero() {
@@ -46,7 +46,7 @@ export function Hero() {
             className="text-xs sm:text-sm font-medium mb-5 sm:mb-7 tracking-wide"
             style={{ color: "var(--clay)" }}
           >
-            for SaaS platforms &amp; entrepreneurs using GHL
+            for coaches, SaaS platforms &amp; entrepreneurs
           </motion.p>
 
           {/* Word-by-word headline */}
@@ -71,7 +71,7 @@ export function Hero() {
                       ease,
                     }}
                   >
-                    {word === "alone" ? (
+                    {word === "team." ? (
                       <span style={{ color: "var(--clay)" }}>{word}</span>
                     ) : (
                       word
@@ -89,9 +89,7 @@ export function Hero() {
             className="text-base sm:text-lg leading-relaxed mb-8 font-light"
             style={{ color: "rgba(244,239,230,0.72)", maxWidth: "42ch" }}
           >
-            Whether you run a SaaS platform for coaches or you&apos;re an
-            entrepreneur who needs real GHL support, we handle the technical
-            side so you can focus on your clients, not your CRM.
+            From GHL setup and automation to paid ads, content creation, and community management, we build and run the complete marketing system so coaches can focus on what they do best.
           </motion.p>
 
           <motion.div
@@ -156,10 +154,10 @@ export function Hero() {
             style={{ background: "var(--bone)", boxShadow: "0 8px 32px rgba(0,0,0,0.2)" }}
           >
             <p className="text-xs font-medium mb-0.5" style={{ color: "var(--stone)" }}>
-              live · every week
+              full-service · one team
             </p>
             <p className="text-sm font-semibold" style={{ color: "var(--forest)" }}>
-              Office Hours included in Deep Roots
+              GHL · Ads · Content · Community
             </p>
           </motion.div>
         </motion.div>

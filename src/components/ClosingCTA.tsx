@@ -38,7 +38,7 @@ export function ClosingCTA() {
               maxWidth: "18ch",
             }}
           >
-            Let&apos;s get your CRM working for you
+            Ready to grow with a team behind you?
           </h2>
           <p
             className="leading-relaxed mb-12 font-light"
@@ -48,9 +48,7 @@ export function ClosingCTA() {
               maxWidth: "44ch",
             }}
           >
-            No pressure, no jargon. Just a real conversation about where you
-            are and what would actually help, whether that&apos;s a quick fix
-            or a long-term partnership.
+            No pressure, no jargon. Just a real conversation about where you are and what it would look like to have GHL, paid ads, content, and community all handled for you.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">

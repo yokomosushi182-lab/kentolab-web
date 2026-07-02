@@ -10,18 +10,20 @@ const CALENDLY = "https://calendly.com/luis-garcia-kento-lab/30min";
 const ease = [0.16, 1, 0.3, 1] as const;
 
 const bloomIncludes = [
-  "Custom funnels & automations",
+  "Custom GHL funnels & automations",
+  "Paid media campaign setup (Google & Meta)",
   "Landing pages & websites",
-  "One-off fixes or rebuilds",
-  "Initial GHL account setup",
+  "Content strategy & creation",
+  "One-off fixes or full rebuilds",
 ];
 
 const deepIncludes = [
-  "Custom Snapshot build",
-  "Up to 3 onboarding sessions",
-  "Ongoing technical support",
-  "Snapshot maintenance & updates",
-  "Weekly Office Hours (group)",
+  "Full GHL management & support",
+  "Paid media management (Google & Meta)",
+  "Content creation & scheduling",
+  "Community management",
+  "Weekly Office Hours (live)",
+  "Monthly marketing strategy sessions",
 ];
 
 function ServicePanel({
@@ -164,7 +166,7 @@ export function Services() {
               maxWidth: "22ch",
             }}
           >
-            Find the right fit for where you are
+            Full-service marketing for coaching businesses
           </h2>
         </motion.div>
       </div>
@@ -173,14 +175,14 @@ export function Services() {
       <ServicePanel
         colorSide="left"
         colorBg="var(--terracotta)"
-        label="for coaches & therapists"
+        label="for coaches, therapists & entrepreneurs"
         title="Bloom Build"
-        tagline="Your custom funnel or fix, built once and ready to grow."
+        tagline="The exact project you need, built right and ready to run."
         tag="pay-per-project · no commitment"
         accentColor="var(--bone)"
         dotColor="var(--terracotta)"
         items={bloomIncludes}
-        body="Clients come back any time they need something new. No retainer, no ongoing commitment. Just the build you need, done right."
+        body="Pay for exactly what you need, when you need it. From a single funnel to a full campaign launch. No retainer, no lock-in. Come back anytime."
         photo="https://images.unsplash.com/photo-1585974738771-84483dd9f89f?auto=format&fit=crop&w=800&q=80"
         photoAlt="A flourishing, grounded workspace"
         ctas={
@@ -206,14 +208,14 @@ export function Services() {
       <ServicePanel
         colorSide="right"
         colorBg="var(--forest)"
-        label="for SaaS platforms serving coaches"
+        label="for coaches & SaaS platforms ready to scale"
         title="Deep Roots"
-        tagline="The ongoing technical partnership behind your platform."
+        tagline="Your full marketing team, on retainer. We run it all."
         tag="ongoing retainer · built for growth"
         accentColor="var(--clay)"
         dotColor="var(--forest)"
         items={deepIncludes}
-        body="Built for SaaS platforms that serve coaches and need a real technical partner, not a one-time contractor. Weekly Office Hours keep your clients from churning."
+        body="We run the systems, manage the ads, create the content, and keep your community engaged. You focus on the product. We handle everything that grows it."
         ctas={
           <>
             <a href={CALENDLY} target="_blank" rel="noopener noreferrer"
