@@ -12,6 +12,7 @@ const team = [
     bg: "var(--forest)",
     text: "var(--bone)",
     accent: "var(--moss)",
+    photo: "/luis.png",
     portfolio: "https://luis.kentolab.com/",
     linkedin: "https://www.linkedin.com/in/luis-garcia-67b837393",
   },
