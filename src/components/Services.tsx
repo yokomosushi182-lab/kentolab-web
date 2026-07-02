@@ -10,7 +10,7 @@ const CALENDLY = "https://calendly.com/luis-garcia-kento-lab/30min";
 const ease = [0.16, 1, 0.3, 1] as const;
 
 const bloomIncludes = [
-  "Custom GHL funnels & automations",
+  "Custom Go High Level (GHL) funnels & automations",
   "Paid media campaign setup (Google & Meta)",
   "Landing pages & websites",
   "Content strategy & creation",
@@ -18,7 +18,7 @@ const bloomIncludes = [
 ];
 
 const deepIncludes = [
-  "Full GHL management & support",
+  "Full Go High Level (GHL) management & support",
   "Paid media management (Google & Meta)",
   "Content creation & scheduling",
   "Community management",

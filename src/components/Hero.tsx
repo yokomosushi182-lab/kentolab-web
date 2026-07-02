@@ -89,7 +89,7 @@ export function Hero() {
             className="text-base sm:text-lg leading-relaxed mb-8 font-light"
             style={{ color: "rgba(244,239,230,0.72)", maxWidth: "42ch" }}
           >
-            From GHL setup and automation to paid ads, content creation, and community management, we build and run the complete marketing system so coaches can focus on what they do best.
+            From Go High Level (GHL) setup and automation to paid ads, content creation, and community management, we build and run the complete marketing system so coaches can focus on what they do best.
           </motion.p>
 
           <motion.div
@@ -157,7 +157,7 @@ export function Hero() {
               full-service · one team
             </p>
             <p className="text-sm font-semibold" style={{ color: "var(--forest)" }}>
-              GHL · Ads · Content · Community
+              Go High Level CRM · Ads · Content · Community
             </p>
           </motion.div>
         </motion.div>
