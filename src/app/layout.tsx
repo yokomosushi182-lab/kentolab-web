@@ -11,6 +11,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://kentolab.com"),
   title: "kento lab: full-service marketing for coaching businesses",
   description:
     "GHL setup and automation, paid media (Google & Meta), content creation, and community management for coaches, therapists, and the SaaS platforms built around them.",
