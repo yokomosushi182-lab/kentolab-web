@@ -36,7 +36,8 @@ const team = [
   },
   {
     name: "Luisina",
-    role: "Facebook & Meta Ads",
+    role: "Paid Media Specialist",
+    desc: "Google & Meta Ads",
     initials: "LU",
     bg: "var(--clay)",
     text: "var(--forest)",
@@ -135,6 +136,14 @@ export function Team() {
                 >
                   {member.role}
                 </p>
+                {"desc" in member && member.desc && (
+                  <p
+                    className="text-xs leading-snug"
+                    style={{ color: "var(--stone)", opacity: 0.7 }}
+                  >
+                    {member.desc}
+                  </p>
+                )}
               </div>
 
               {/* Links */}
