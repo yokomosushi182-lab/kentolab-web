@@ -47,6 +47,7 @@ const team = [
     text: "var(--forest)",
     accent: "var(--terracotta)",
     photo: "/luisina.jpeg",
+    linkedin: "https://www.linkedin.com/in/luisina-comes-84516020a/",
   },
   {
     name: "Gala Rodriguez",
