@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
@@ -21,6 +22,7 @@ const team = [
     bg: "var(--forest)",
     text: "var(--bone)",
     accent: "var(--moss)",
+    photo: "/agustina.jpeg",
     portfolio: "https://agustina-ghl-expert-9dqia91.gamma.site/",
     linkedin: "https://www.linkedin.com/in/agustina-czemerys-aa804718a/",
   },
@@ -31,6 +33,7 @@ const team = [
     bg: "var(--terracotta)",
     text: "var(--bone)",
     accent: "var(--clay)",
+    photo: "/FlorSanchez ProfilePicture.png copia.png",
     portfolio: "https://www.instagram.com/flowerpower.emprende",
     linkedin: "https://www.linkedin.com/in/florsanchezodo/",
   },
@@ -42,6 +45,7 @@ const team = [
     bg: "var(--clay)",
     text: "var(--forest)",
     accent: "var(--terracotta)",
+    photo: "/luisina.jpeg",
   },
   {
     name: "Gala Rodriguez",
@@ -59,6 +63,7 @@ const team = [
     bg: "var(--moss)",
     text: "var(--bone)",
     accent: "var(--clay)",
+    photo: "/milagros.jpg",
     portfolio: "https://melicontent.netlify.app/",
   },
 ];
@@ -110,17 +115,29 @@ export function Team() {
               }}
             >
               {/* Avatar */}
-              <div
-                className="w-14 h-14 rounded-full flex items-center justify-center font-semibold text-base flex-shrink-0"
-                style={{
-                  background: member.bg,
-                  color: member.text,
-                  letterSpacing: "-0.02em",
-                }}
-                aria-hidden="true"
-              >
-                {member.initials}
-              </div>
+              {"photo" in member && member.photo ? (
+                <div className="w-14 h-14 rounded-full overflow-hidden flex-shrink-0 relative">
+                  <Image
+                    src={member.photo}
+                    alt={member.name}
+                    fill
+                    className="object-cover object-top"
+                    sizes="56px"
+                  />
+                </div>
+              ) : (
+                <div
+                  className="w-14 h-14 rounded-full flex items-center justify-center font-semibold text-base flex-shrink-0"
+                  style={{
+                    background: member.bg,
+                    color: member.text,
+                    letterSpacing: "-0.02em",
+                  }}
+                  aria-hidden="true"
+                >
+                  {member.initials}
+                </div>
+              )}
 
               {/* Info */}
               <div className="flex flex-col gap-1 flex-1">
