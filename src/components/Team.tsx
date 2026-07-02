@@ -56,6 +56,7 @@ const team = [
     bg: "var(--moss)",
     text: "var(--bone)",
     accent: "var(--clay)",
+    photo: "/milagros.jpg",
     linkedin: "https://www.instagram.com/flowerpower.emprende",
   },
   {
@@ -65,7 +66,6 @@ const team = [
     bg: "var(--moss)",
     text: "var(--bone)",
     accent: "var(--clay)",
-    photo: "/milagros.jpg",
     portfolio: "https://melicontent.netlify.app/",
   },
 ];
