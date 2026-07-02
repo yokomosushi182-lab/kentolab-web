@@ -39,7 +39,7 @@ const team = [
     linkedin: "https://www.linkedin.com/in/florsanchezodo/",
   },
   {
-    name: "Luisina",
+    name: "Luisina Comes",
     role: "Paid Media Specialist",
     desc: "Google & Meta Ads",
     initials: "LU",
