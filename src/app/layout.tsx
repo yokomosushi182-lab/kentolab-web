@@ -15,9 +15,18 @@ export const metadata: Metadata = {
   description:
     "GHL setup and automation, paid media (Google & Meta), content creation, and community management for coaches, therapists, and the SaaS platforms built around them.",
   openGraph: {
-    title: "kento lab",
-    description: "Where technology meets nature.",
+    title: "kento lab: full-service marketing for coaching businesses",
+    description:
+      "GHL setup and automation, paid media (Google & Meta), content creation, and community management for coaches, therapists, and the SaaS platforms built around them.",
     type: "website",
+    url: "https://kentolab.com",
+    siteName: "kento lab",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "kento lab: full-service marketing for coaching businesses",
+    description:
+      "GHL setup and automation, paid media (Google & Meta), content creation, and community management for coaches, therapists, and the SaaS platforms built around them.",
   },
 };
 
