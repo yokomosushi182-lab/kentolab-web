@@ -38,6 +38,15 @@ h1, h2, h3, h4 {
   letter-spacing: -0.02em;
 }
 
+.font-display {
+  font-family: var(--font-bodoni), Georgia, serif;
+}
+
+.font-display-italic {
+  font-family: var(--font-bodoni), Georgia, serif;
+  font-style: italic;
+}
+
 p {
   text-wrap: pretty;
 }

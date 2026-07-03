@@ -31,11 +31,15 @@ export function ClosingCTA() {
             ready when you are
           </p>
           <h2
-            className="font-semibold leading-tight mb-8"
+            className="leading-tight mb-8"
             style={{
+              fontFamily: "var(--font-bodoni), Georgia, serif",
+              fontStyle: "italic",
               fontSize: "clamp(2.25rem, 6vw, 4.5rem)",
               color: "var(--bone)",
               maxWidth: "18ch",
+              letterSpacing: "-0.03em",
+              fontWeight: 700,
             }}
           >
             Ready to grow with a team behind you?

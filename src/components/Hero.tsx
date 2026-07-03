@@ -5,10 +5,10 @@ import Image from "next/image";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
-const headlineWords = [
-  "your coaches need",
-  "more than a CRM.",
-  "they need a team.",
+const lines = [
+  { text: "your coaches need", accentWord: null },
+  { text: "more than a CRM.", accentWord: null },
+  { text: "they need a team.", accentWord: "team." },
 ];
 
 export function Hero() {
@@ -26,11 +26,22 @@ export function Hero() {
       {/* Ambient glow */}
       <motion.div
         className="absolute inset-0 pointer-events-none"
-        animate={{ opacity: [0.6, 1, 0.6] }}
-        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+        animate={{ opacity: [0.5, 1, 0.5] }}
+        transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
         style={{
           backgroundImage:
-            "radial-gradient(ellipse at 65% 45%, rgba(216,138,87,0.11) 0%, transparent 55%)",
+            "radial-gradient(ellipse at 68% 42%, rgba(216,138,87,0.13) 0%, transparent 55%)",
+        }}
+        aria-hidden="true"
+      />
+
+      {/* Subtle grid */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(244,239,230,0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(244,239,230,0.025) 1px, transparent 1px)",
+          backgroundSize: "80px 80px",
         }}
         aria-hidden="true"
       />
@@ -49,35 +60,34 @@ export function Hero() {
             for coaches, SaaS platforms &amp; entrepreneurs
           </motion.p>
 
-          {/* Word-by-word headline */}
+          {/* Rising-text headline — Bodoni Moda italic */}
           <h1
-            className="font-semibold leading-[1.1] mb-5 sm:mb-7"
+            className="leading-[1.08] mb-6 sm:mb-8"
             style={{
-              fontSize: "clamp(1.75rem, 7vw, 4.5rem)",
+              fontFamily: "var(--font-bodoni), Georgia, serif",
+              fontStyle: "italic",
+              fontSize: "clamp(2.2rem, 7.5vw, 5rem)",
               color: "var(--bone)",
+              letterSpacing: "-0.03em",
             }}
           >
-            {headlineWords.map((line, li) => (
-              <span key={li} className="block">
-                {line.split(" ").map((word, wi) => (
-                  <motion.span
-                    key={wi}
-                    className="inline-block mr-[0.22em]"
-                    initial={{ opacity: 0, y: 32, filter: "blur(4px)" }}
-                    animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-                    transition={{
-                      duration: 0.7,
-                      delay: 0.2 + li * 0.16 + wi * 0.06,
-                      ease,
-                    }}
-                  >
-                    {word === "team." ? (
-                      <span style={{ color: "var(--clay)" }}>{word}</span>
-                    ) : (
-                      word
-                    )}
-                  </motion.span>
-                ))}
+            {lines.map((line, li) => (
+              <span key={li} className="block" style={{ overflow: "hidden" }}>
+                <motion.span
+                  className="block"
+                  initial={{ y: "110%" }}
+                  animate={{ y: "0%" }}
+                  transition={{ duration: 0.9, delay: 0.25 + li * 0.14, ease }}
+                >
+                  {line.accentWord
+                    ? line.text.replace(line.accentWord, "").concat("").split("").length > 0 && (
+                        <>
+                          {line.text.slice(0, line.text.indexOf(line.accentWord))}
+                          <span style={{ color: "var(--clay)" }}>{line.accentWord}</span>
+                        </>
+                      )
+                    : line.text}
+                </motion.span>
               </span>
             ))}
           </h1>
@@ -128,7 +138,7 @@ export function Hero() {
         >
           <div
             className="relative rounded-2xl overflow-hidden"
-            style={{ height: "520px", boxShadow: "0 32px 80px rgba(0,0,0,0.35)" }}
+            style={{ height: "540px", boxShadow: "0 40px 100px rgba(0,0,0,0.45)" }}
           >
             <Image
               src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
@@ -140,26 +150,46 @@ export function Hero() {
             />
             <div
               className="absolute inset-0"
-              style={{ background: "rgba(47,64,53,0.18)" }}
+              style={{
+                background: "linear-gradient(to top, rgba(47,64,53,0.65) 0%, rgba(47,64,53,0.08) 50%, transparent 100%)",
+              }}
               aria-hidden="true"
             />
           </div>
 
           {/* Floating badge */}
           <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.3, duration: 0.6, ease }}
-            className="absolute -bottom-5 -left-6 px-5 py-3.5 rounded-xl"
-            style={{ background: "var(--bone)", boxShadow: "0 8px 32px rgba(0,0,0,0.2)" }}
+            initial={{ opacity: 0, y: 20, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ delay: 1.35, duration: 0.7, ease }}
+            className="absolute -bottom-5 -left-7 px-5 py-4 rounded-xl"
+            style={{ background: "var(--bone)", boxShadow: "0 12px 40px rgba(0,0,0,0.22)" }}
           >
-            <p className="text-xs font-medium mb-0.5" style={{ color: "var(--stone)" }}>
+            <p className="text-xs font-medium mb-1" style={{ color: "var(--stone)" }}>
               full-service · one team
             </p>
             <p className="text-sm font-semibold" style={{ color: "var(--forest)" }}>
               Go High Level CRM · Ads · Content · Community
             </p>
           </motion.div>
+
+          {/* Decorative rings */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 1.5, duration: 1, ease }}
+            className="absolute -top-4 -right-4 w-20 h-20 rounded-full border pointer-events-none"
+            style={{ borderColor: "rgba(216,138,87,0.25)" }}
+            aria-hidden="true"
+          />
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 1.65, duration: 1, ease }}
+            className="absolute -top-1 -right-1 w-10 h-10 rounded-full border pointer-events-none"
+            style={{ borderColor: "rgba(216,138,87,0.4)" }}
+            aria-hidden="true"
+          />
         </motion.div>
       </div>
 
