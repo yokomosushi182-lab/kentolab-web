@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --forest:     #2F4035;
-  --moss:       #7C8A5F;
-  --terracotta: #B5602F;
-  --clay:       #D88A57;
-  --bone:       #F4EFE6;
-  --stone:      #7A7A6E;
+  --forest:     #111111;
+  --moss:       #888888;
+  --terracotta: #D94F00;
+  --clay:       #FF6B00;
+  --bone:       #F8F8F8;
+  --stone:      #666666;
 
   --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
   --ease-out-expo:  cubic-bezier(0.16, 1, 0.3, 1);
@@ -38,17 +38,16 @@ h1, h2, h3, h4 {
   letter-spacing: -0.02em;
 }
 
-
 p {
   text-wrap: pretty;
 }
 
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--bone); }
-::-webkit-scrollbar-thumb { background: var(--moss); border-radius: 3px; }
+::-webkit-scrollbar-thumb { background: var(--clay); border-radius: 3px; }
 
 :focus-visible {
-  outline: 2px solid var(--terracotta);
+  outline: 2px solid var(--clay);
   outline-offset: 3px;
   border-radius: 2px;
 }

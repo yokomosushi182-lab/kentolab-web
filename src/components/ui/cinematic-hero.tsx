@@ -76,7 +76,7 @@ export function CinematicHero({ className, ...props }: CinematicHeroProps) {
             delay={0.1}
             stagger={0.035}
             style={{
-              fontSize: "clamp(4rem, 12vw, 11rem)",
+              fontSize: "clamp(2.25rem, 5vw, 4rem)",
               fontWeight: 800,
               letterSpacing: "-0.04em",
               color: "#ffffff",
@@ -91,7 +91,7 @@ export function CinematicHero({ className, ...props }: CinematicHeroProps) {
             delay={0.55}
             stagger={0.05}
             style={{
-              fontSize: "clamp(4rem, 12vw, 11rem)",
+              fontSize: "clamp(2.25rem, 5vw, 4rem)",
               fontWeight: 900,
               letterSpacing: "-0.05em",
               color: "#FF6B00",
