@@ -1,5 +1,6 @@
 "use client";
 import { FadeIn } from "./FadeIn";
+import { MagneticButton } from "./MagneticButton";
 
 const WHATSAPP = `https://wa.me/5492944157182?text=${encodeURIComponent(
   "Hi! I found you through your website and I'd love to learn more about kento lab."
@@ -33,12 +34,10 @@ export function ClosingCTA() {
           <h2
             className="leading-tight mb-8"
             style={{
-              fontFamily: "var(--font-bodoni), Georgia, serif",
-              fontStyle: "italic",
               fontSize: "clamp(2.25rem, 6vw, 4.5rem)",
               color: "var(--bone)",
               maxWidth: "18ch",
-              letterSpacing: "-0.03em",
+              letterSpacing: "-0.04em",
               fontWeight: 700,
             }}
           >
@@ -56,7 +55,7 @@ export function ClosingCTA() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <a
+            <MagneticButton
               href={CALENDLY}
               target="_blank"
               rel="noopener noreferrer"
@@ -64,8 +63,8 @@ export function ClosingCTA() {
               style={{ background: "var(--terracotta)", color: "var(--bone)" }}
             >
               book a free call
-            </a>
-            <a
+            </MagneticButton>
+            <MagneticButton
               href={WHATSAPP}
               target="_blank"
               rel="noopener noreferrer"
@@ -77,7 +76,7 @@ export function ClosingCTA() {
             >
               <WhatsAppIcon />
               message on WhatsApp
-            </a>
+            </MagneticButton>
           </div>
         </FadeIn>
       </div>

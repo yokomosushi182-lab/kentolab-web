@@ -2,6 +2,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
+import { MagneticButton } from "./MagneticButton";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
@@ -46,6 +47,15 @@ export function Hero() {
         aria-hidden="true"
       />
 
+      {/* Film grain */}
+      <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-[0.18]" aria-hidden="true">
+        <filter id="grain">
+          <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
+          <feColorMatrix type="saturate" values="0" />
+        </filter>
+        <rect width="100%" height="100%" filter="url(#grain)" />
+      </svg>
+
       <div className="max-w-6xl mx-auto w-full px-5 sm:px-6 pt-24 pb-16 relative grid md:grid-cols-2 gap-10 md:gap-8 items-center">
 
         {/* Left — text */}
@@ -60,15 +70,13 @@ export function Hero() {
             for coaches, SaaS platforms &amp; entrepreneurs
           </motion.p>
 
-          {/* Rising-text headline — Bodoni Moda italic */}
+          {/* Rising-text headline */}
           <h1
-            className="leading-[1.08] mb-6 sm:mb-8"
+            className="font-bold leading-[1.05] mb-6 sm:mb-8"
             style={{
-              fontFamily: "var(--font-bodoni), Georgia, serif",
-              fontStyle: "italic",
-              fontSize: "clamp(2.2rem, 7.5vw, 5rem)",
+              fontSize: "clamp(2.4rem, 7.5vw, 5.25rem)",
               color: "var(--bone)",
-              letterSpacing: "-0.03em",
+              letterSpacing: "-0.04em",
             }}
           >
             {lines.map((line, li) => (
@@ -108,14 +116,14 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 1, ease }}
             className="flex flex-col sm:flex-row gap-3 sm:gap-4"
           >
-            <a
+            <MagneticButton
               href="#services"
               className="btn-primary inline-flex items-center justify-center gap-2 px-6 py-4 rounded-md font-semibold text-sm sm:text-base min-h-[52px]"
               style={{ background: "var(--terracotta)", color: "var(--bone)" }}
             >
               see how it works
-            </a>
-            <a
+            </MagneticButton>
+            <MagneticButton
               href={`https://wa.me/5492944157182?text=${encodeURIComponent("Hi! I found you through your website and I'd love to learn more about kento lab.")}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -124,7 +132,7 @@ export function Hero() {
             >
               <WhatsAppIcon />
               chat on WhatsApp
-            </a>
+            </MagneticButton>
           </motion.div>
         </motion.div>
 

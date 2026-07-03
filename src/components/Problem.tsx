@@ -50,9 +50,8 @@ function ProblemRow({
         className="absolute right-0 top-1/2 -translate-y-1/2 select-none pointer-events-none leading-none"
         aria-hidden="true"
         style={{
-          fontFamily: "var(--font-bodoni), Georgia, serif",
-          fontStyle: "italic",
           fontSize: "clamp(8rem, 18vw, 18rem)",
+          fontWeight: 800,
           color: "rgba(244,239,230,0.03)",
           letterSpacing: "-0.06em",
           lineHeight: 1,
@@ -156,12 +155,11 @@ export function Problem() {
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.85, delay: 0.05, ease }}
               style={{
-                fontFamily: "var(--font-bodoni), Georgia, serif",
-                fontStyle: "italic",
                 fontSize: "clamp(2rem, 5vw, 3.75rem)",
+                fontWeight: 700,
                 color: "var(--bone)",
-                letterSpacing: "-0.03em",
-                lineHeight: 1.15,
+                letterSpacing: "-0.04em",
+                lineHeight: 1.1,
               }}
             >
               You&apos;ve probably

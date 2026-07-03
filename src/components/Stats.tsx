@@ -55,13 +55,11 @@ export function Stats() {
             style={{ borderColor: "rgba(244,239,230,0.08)" }}
           >
             <p
-              className="font-display-italic leading-none"
+              className="font-bold leading-none tabular-nums"
               style={{
-                fontFamily: "var(--font-bodoni), Georgia, serif",
-                fontStyle: "italic",
                 fontSize: "clamp(3rem, 6vw, 5rem)",
                 color: "var(--bone)",
-                letterSpacing: "-0.04em",
+                letterSpacing: "-0.05em",
               }}
             >
               <Counter to={s.value} suffix={s.suffix} />
