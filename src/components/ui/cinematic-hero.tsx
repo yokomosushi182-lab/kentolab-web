@@ -94,7 +94,7 @@ export function CinematicHero({ className, ...props }: CinematicHeroProps) {
               fontSize: "clamp(2.25rem, 5vw, 4rem)",
               fontWeight: 900,
               letterSpacing: "-0.05em",
-              color: "#FF6B00",
+              color: "#E8531A",
               lineHeight: 1.08,
             }}
           />
@@ -124,7 +124,7 @@ export function CinematicHero({ className, ...props }: CinematicHeroProps) {
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-3 px-8 py-4 rounded-2xl font-semibold text-base"
             style={{
-              background: "#FF6B00",
+              background: "#E8531A",
               color: "#ffffff",
               boxShadow: "0 12px 24px -4px rgba(255,107,0,0.4)",
               transition: "transform 0.3s ease, box-shadow 0.3s ease",

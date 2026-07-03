@@ -24,8 +24,8 @@ export function Nav() {
         className="fixed top-0 left-0 right-0 transition-all duration-300"
         style={{
           zIndex: "var(--z-nav)",
-          background: "var(--bone)",
-          boxShadow: scrolled ? "0 1px 0 rgba(47,64,53,0.1)" : "0 1px 0 rgba(47,64,53,0.06)",
+          background: "#0A0A0A",
+          boxShadow: scrolled ? "0 1px 0 rgba(255,255,255,0.06)" : "none",
         }}
       >
         <div className="max-w-6xl mx-auto px-5 sm:px-6 h-16 flex items-center justify-between">
@@ -35,10 +35,10 @@ export function Nav() {
 
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
-            <a href="#services" className="nav-link text-sm font-medium" style={{ color: "var(--forest)" }}>
+            <a href="#services" className="nav-link text-sm font-medium" style={{ color: "#F0F0F0" }}>
               services
             </a>
-            <a href="#about" className="nav-link text-sm font-medium" style={{ color: "var(--forest)" }}>
+            <a href="#about" className="nav-link text-sm font-medium" style={{ color: "#F0F0F0" }}>
               about
             </a>
             <a

@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --forest:     #111111;
+  --forest:     #0A0A0A;
   --moss:       #888888;
-  --terracotta: #D94F00;
-  --clay:       #FF6B00;
-  --bone:       #F8F8F8;
+  --terracotta: #C44A15;
+  --clay:       #E8531A;
+  --bone:       #F0F0F0;
   --stone:      #666666;
 
   --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
@@ -26,8 +26,8 @@ html {
 
 body {
   font-family: var(--font-poppins), system-ui, sans-serif;
-  background: var(--bone);
-  color: var(--forest);
+  background: #0A0A0A;
+  color: #F0F0F0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -43,7 +43,7 @@ p {
 }
 
 ::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--bone); }
+::-webkit-scrollbar-track { background: #0A0A0A; }
 ::-webkit-scrollbar-thumb { background: var(--clay); border-radius: 3px; }
 
 :focus-visible {
