@@ -164,7 +164,7 @@ export const CircularTestimonials = ({
               alt={item.name}
               style={{
                 position: "absolute", width: "100%", height: "100%",
-                objectFit: "cover", borderRadius: "1.25rem",
+                objectFit: "contain", borderRadius: "1.25rem",
                 boxShadow: "0 12px 40px rgba(47,64,53,0.2)",
                 ...getImageStyle(index),
               }}
