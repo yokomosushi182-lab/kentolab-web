@@ -1,29 +1,33 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
+import { CircularTestimonials } from "@/components/ui/circular-testimonials";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
-const screenshots = [
+const slides = [
   {
     src: "/oh-call-1.png",
-    alt: "Live Office Hours session — coaching clients working through GHL together",
-    caption: "weekly group calls",
+    name: "weekly group calls",
+    designation: "live every week",
+    quote: "Every week we get on a live call with your clients. We answer questions, fix things in real time, and make sure nobody gets left behind.",
   },
   {
     src: "/oh-ghl-1.png",
-    alt: "GHL funnel setup during a live Office Hours session",
-    caption: "live inside GHL",
+    name: "live inside GHL",
+    designation: "hands-on in the platform",
+    quote: "We screen-share directly inside Go High Level, walking coaches through the exact setup for their offer, not a generic tutorial.",
   },
   {
     src: "/oh-call-2.png",
-    alt: "Office Hours coaching group — kento lab clients collaborating",
-    caption: "real community",
+    name: "real community",
+    designation: "coaches helping coaches",
+    quote: "Your clients learn from each other. Common questions get answered once and the whole group levels up together.",
   },
   {
     src: "/oh-ghl-2.png",
-    alt: "GHL workflow automation built during Office Hours",
-    caption: "hands-on support",
+    name: "hands-on support",
+    designation: "we handle the complexity",
+    quote: "GHL is powerful and overwhelming. We keep your coaches focused on their clients while we handle the backend that makes it all run.",
   },
 ];
 
@@ -83,47 +87,32 @@ export function OfficeHours() {
           </motion.div>
         </div>
 
-        {/* Screenshot grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
-          {screenshots.map((s, i) => (
-            <motion.div
-              key={s.src}
-              initial={{ opacity: 0, y: 32, scale: 0.97 }}
-              whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              viewport={{ once: true, margin: "-40px" }}
-              transition={{ duration: 0.65, delay: i * 0.1, ease }}
-              className="flex flex-col gap-3"
-            >
-              <div
-                className="relative rounded-xl overflow-hidden"
-                style={{
-                  paddingBottom: "72%",
-                  boxShadow: "0 8px 32px rgba(47,64,53,0.14)",
-                }}
-              >
-                <Image
-                  src={s.src}
-                  alt={s.alt}
-                  fill
-                  className="object-cover object-top"
-                  sizes="(max-width: 768px) 50vw, 25vw"
-                />
-                {/* subtle overlay */}
-                <div
-                  className="absolute inset-0"
-                  style={{ background: "rgba(47,64,53,0.06)" }}
-                  aria-hidden="true"
-                />
-              </div>
-              <p
-                className="text-xs font-medium text-center"
-                style={{ color: "var(--stone)" }}
-              >
-                {s.caption}
-              </p>
-            </motion.div>
-          ))}
-        </div>
+        {/* Carousel */}
+        <motion.div
+          initial={{ opacity: 0, y: 28 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{ duration: 0.75, ease }}
+          className="flex justify-center mb-16"
+        >
+          <CircularTestimonials
+            testimonials={slides}
+            autoplay
+            colors={{
+              name: "var(--forest)",
+              designation: "var(--moss)",
+              testimony: "var(--forest)",
+              arrowBackground: "var(--forest)",
+              arrowForeground: "var(--bone)",
+              arrowHoverBackground: "var(--terracotta)",
+            }}
+            fontSizes={{
+              name: "1.375rem",
+              designation: "0.75rem",
+              quote: "1rem",
+            }}
+          />
+        </motion.div>
 
         {/* What this means for coaches */}
         <motion.div
