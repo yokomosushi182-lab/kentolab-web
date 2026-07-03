@@ -1,5 +1,5 @@
 import { Nav } from "@/components/Nav";
-import { Hero } from "@/components/Hero";
+import { CinematicHero } from "@/components/ui/cinematic-hero";
 import { Stats } from "@/components/Stats";
 import { Marquee } from "@/components/Marquee";
 import { Problem } from "@/components/Problem";
@@ -17,7 +17,7 @@ export default function Home() {
       <CursorGlow />
       <Nav />
       <main>
-        <Hero />
+        <CinematicHero />
         <Stats />
         <Marquee />
         <Problem />
