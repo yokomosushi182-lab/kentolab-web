@@ -9,14 +9,29 @@ const pillars = [
   {
     word: "grounded",
     desc: "Plain language, no jargon, no disappearing act. We work within your world.",
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M12 22V12"/><path d="M5 12H2a10 10 0 0020 0h-3"/><path d="M8 6l4-4 4 4"/><path d="M12 2v10"/>
+      </svg>
+    ),
   },
   {
     word: "steady",
     desc: "Not a one-time fix. A partner you can actually reach after the build is done.",
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/>
+      </svg>
+    ),
   },
   {
     word: "rooted",
     desc: "Coaches, therapists, and the platforms built around them. We know your context.",
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>
+      </svg>
+    ),
   },
 ];
 
@@ -149,7 +164,7 @@ export function BrandTerritory() {
         </motion.p>
 
         <div className="grid md:grid-cols-3 gap-5">
-          {pillars.map(({ word, desc }, i) => (
+          {pillars.map(({ word, desc, icon }, i) => (
             <motion.div
               key={word}
               initial={{ opacity: 0, y: 28 }}
@@ -162,6 +177,12 @@ export function BrandTerritory() {
                 borderColor: "rgba(244,239,230,0.08)",
               }}
             >
+              <div
+                className="w-8 h-8 rounded-lg flex items-center justify-center mb-4"
+                style={{ background: "rgba(244,239,230,0.06)", color: "var(--clay)" }}
+              >
+                {icon}
+              </div>
               <p
                 className="font-semibold text-xl mb-3"
                 style={{ color: "var(--clay)" }}
