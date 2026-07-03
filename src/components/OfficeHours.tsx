@@ -126,16 +126,31 @@ export function OfficeHours() {
             {
               title: "We know their offers",
               body: "We understand how coaches package and sell their programs — funnels, automations, booking flows, so we speak their language, not just GHL's.",
+              icon: (
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                </svg>
+              ),
             },
             {
               title: "We handle the complexity",
               body: "GHL is powerful and overwhelming. We keep your coaches focused on their clients while we handle the backend that makes it all run.",
+              icon: (
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 4.93a10 10 0 000 14.14M15.54 8.46a5 5 0 010 7.07M8.46 8.46a5 5 0 000 7.07"/>
+                </svg>
+              ),
             },
             {
               title: "We reduce your churn",
               body: "Clients who feel supported and confident in their tools stay. Office Hours is the retention strategy built into your SaaS model.",
+              icon: (
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/>
+                </svg>
+              ),
             },
-          ].map(({ title, body }, i) => (
+          ].map(({ title, body, icon }, i) => (
             <motion.div
               key={title}
               initial={{ opacity: 0, y: 20 }}
@@ -148,6 +163,12 @@ export function OfficeHours() {
                 background: "rgba(47,64,53,0.03)",
               }}
             >
+              <div
+                className="w-9 h-9 rounded-lg flex items-center justify-center mb-4"
+                style={{ background: "rgba(47,64,53,0.08)", color: "var(--forest)" }}
+              >
+                {icon}
+              </div>
               <h3
                 className="font-semibold mb-3 text-lg"
                 style={{ color: "var(--forest)" }}
