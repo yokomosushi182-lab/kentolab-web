@@ -16,33 +16,33 @@ export default function Image() {
           flexDirection: "column",
           justifyContent: "flex-end",
           padding: "72px 80px",
-          background: "#2F4035",
+          background: "#0A0A0A",
           position: "relative",
         }}
       >
-        {/* Glow */}
+        {/* Orange glow top-right */}
+        <div
+          style={{
+            position: "absolute",
+            top: -100,
+            right: -100,
+            width: 600,
+            height: 600,
+            borderRadius: "50%",
+            background: "radial-gradient(circle, rgba(232,83,26,0.25) 0%, transparent 70%)",
+            display: "flex",
+          }}
+        />
+
+        {/* Orange accent bar left */}
         <div
           style={{
             position: "absolute",
             top: 0,
-            right: 0,
-            width: 700,
-            height: 500,
-            background:
-              "radial-gradient(ellipse at 80% 30%, rgba(216,138,87,0.22) 0%, transparent 65%)",
-            display: "flex",
-          }}
-        />
-        {/* Bottom-left circle */}
-        <div
-          style={{
-            position: "absolute",
-            bottom: -160,
-            left: -80,
-            width: 520,
-            height: 520,
-            borderRadius: "50%",
-            background: "rgba(124,138,95,0.12)",
+            left: 0,
+            width: 8,
+            height: "100%",
+            background: "#E8531A",
             display: "flex",
           }}
         />
@@ -60,22 +60,22 @@ export default function Image() {
         >
           <span
             style={{
-              fontFamily: "serif",
-              fontSize: 52,
-              fontWeight: 700,
-              color: "#F4EFE6",
-              letterSpacing: "-1px",
+              fontFamily: "sans-serif",
+              fontSize: 48,
+              fontWeight: 800,
+              color: "#ffffff",
+              letterSpacing: "-1.5px",
             }}
           >
             kento
           </span>
           <span
             style={{
-              fontFamily: "serif",
-              fontSize: 52,
-              fontWeight: 700,
-              color: "#D88A57",
-              letterSpacing: "-1px",
+              fontFamily: "sans-serif",
+              fontSize: 48,
+              fontWeight: 800,
+              color: "#E8531A",
+              letterSpacing: "-1.5px",
             }}
           >
             lab
@@ -83,56 +83,45 @@ export default function Image() {
         </div>
 
         {/* Main content */}
-        <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: 18 }}>
           <div
             style={{
-              fontFamily: "serif",
-              fontSize: 72,
-              fontWeight: 700,
-              color: "#F4EFE6",
-              lineHeight: 1.08,
+              fontFamily: "sans-serif",
+              fontSize: 68,
+              fontWeight: 800,
+              color: "#ffffff",
+              lineHeight: 1.06,
               letterSpacing: "-2px",
             }}
           >
             Full-service marketing
             <br />
-            for coaching businesses.
+            <span style={{ color: "#E8531A" }}>for coaching businesses.</span>
           </div>
 
           <div
             style={{
-              fontSize: 26,
-              color: "rgba(244,239,230,0.6)",
+              fontSize: 24,
+              color: "rgba(255,255,255,0.5)",
               fontFamily: "sans-serif",
               letterSpacing: "-0.3px",
             }}
           >
-            Go High Level CRM · Paid Media · Content · Community Management
+            Go High Level · Paid Media · Content · Community Management
           </div>
 
-          {/* Divider */}
-          <div
-            style={{
-              width: 80,
-              height: 3,
-              background: "#D88A57",
-              borderRadius: 2,
-              marginTop: 4,
-              display: "flex",
-            }}
-          />
-
           {/* Pills */}
-          <div style={{ display: "flex", gap: 12, marginTop: 4, flexWrap: "wrap" }}>
+          <div style={{ display: "flex", gap: 10, marginTop: 8 }}>
             {["GHL Experts", "Paid Media", "Content", "Community"].map((pill) => (
               <div
                 key={pill}
                 style={{
-                  padding: "10px 22px",
+                  padding: "8px 20px",
                   borderRadius: 30,
-                  background: "rgba(124,138,95,0.3)",
-                  color: "#F4EFE6",
-                  fontSize: 20,
+                  border: "1px solid rgba(232,83,26,0.4)",
+                  background: "rgba(232,83,26,0.1)",
+                  color: "#E8531A",
+                  fontSize: 18,
                   fontFamily: "sans-serif",
                   fontWeight: 600,
                   display: "flex",
@@ -150,11 +139,11 @@ export default function Image() {
             position: "absolute",
             bottom: 72,
             right: 80,
-            color: "#D88A57",
-            fontSize: 26,
+            color: "rgba(255,255,255,0.4)",
+            fontSize: 22,
             fontFamily: "sans-serif",
-            fontWeight: 600,
-            letterSpacing: "-0.3px",
+            fontWeight: 500,
+            letterSpacing: "0px",
           }}
         >
           kentolab.com
