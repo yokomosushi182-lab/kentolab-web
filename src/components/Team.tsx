@@ -63,6 +63,7 @@ const team = [
     name: "Meli Cores",
     role: "Content Creation & Community Management",
     initials: "ME",
+    photo: "/meli-cores.jpeg",
     bg: "var(--moss)",
     text: "var(--bone)",
     accent: "var(--clay)",
